@@ -14,7 +14,7 @@
 ## To get started:
 
 1. Install [NodeJS](http://www.nodejs.org)  
-2. Pull the repository 
+2. Pull the repository - git@github.com:chintanvyas89/react-login-app.git
 3. Open the command line of your choice and cd to the root directory of this repo on your machine  
 4. `npm install` - Installs packages
 5. `npm install -g gulp` - Installs gulp globally.(Use sudo if access problem)
