@@ -1,5 +1,10 @@
-$ = jQuery = require('jquery');
+"use strict";
 
-var App = console.log('Hello world from Browserify');
+var React = require('react');
 
-module.exports = App;
+var Router = require('react-router');
+var routes = require('./routes');
+
+Router.run(routes, function(Handler) {
+   React.render(<Handler/>, document.getElementById('app'));
+});

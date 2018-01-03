@@ -10,6 +10,7 @@
   "author": "Cory House",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.17.1",
     "bootstrap": "^3.3.5",
     "browserify": "^11.0.1",
     "flux": "^2.0.3",
@@ -20,8 +21,10 @@
     "gulp-open": "^1.0.0",
     "jquery": "^2.1.4",
     "react": "^0.13.3",
+    "react-global-storage": "0.0.5",
     "react-router": "^0.13.3",
     "reactify": "^1.1.1",
+    "toastr": "^2.1.0",
     "vinyl-source-stream": "^1.1.0"
   }
 }

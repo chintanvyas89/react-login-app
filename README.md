@@ -1,8 +1,8 @@
 ##Dev Environment
-- React, React Router, and Flux for ultra-responsive UI development  
+- React, React Router
 - Browserify bundling  
 - jQuery with Bootstrap for styling  
-- Gulp build that:  
+- Gulp build that:
   - compiles JSX  
   - lints JSX and JS via ESLint  
   - bundles JS and CSS files  
