@@ -34,7 +34,7 @@ var LoginContent = React.createClass({
      return (
          <div>
             <div className="col-sm-8">
-              <h2>React login app using drupal json Api</h2>
+              <h2>React login app using drupal rest Api</h2>
             </div>
             <div className="col-sm-4">
                 <div className="col-sm-8">

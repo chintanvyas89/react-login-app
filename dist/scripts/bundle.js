@@ -33854,7 +33854,7 @@ var LoginContent = React.createClass({displayName: "LoginContent",
      return (
          React.createElement("div", null, 
             React.createElement("div", {className: "col-sm-8"}, 
-              React.createElement("h2", null, "React login app using drupal json Api")
+              React.createElement("h2", null, "React login app using drupal rest Api")
             ), 
             React.createElement("div", {className: "col-sm-4"}, 
                 React.createElement("div", {className: "col-sm-8"}, 
@@ -34025,29 +34025,31 @@ var React = require('react');
 var LoginForm = React.createClass({displayName: "LoginForm",
     render: function() {
         return (
-            React.createElement("div", {className: "col-sm-4"}, 
-                React.createElement("form", null, 
-                    React.createElement("div", {className: "form-group"}, 
-                        React.createElement("label", null, "Email address"), 
-                        React.createElement("input", {type: "text", 
-                            name: "username", 
-                            className: "form-control", 
-                            placeholder: "Username", 
-                            ref: "username", 
-                            onChange: this.props.onChange, 
-                            value: this.props.user.username})
-                    ), 
-                    React.createElement("div", {className: "form-group"}, 
-                        React.createElement("label", null, "Password"), 
-                        React.createElement("input", {type: "password", 
-                            name: "pass", 
-                            className: "form-control", 
-                            placeholder: "Password", 
-                            ref: "pass", 
-                            onChange: this.props.onChange, 
-                            value: this.props.user.pass})
-                    ), 
-                    React.createElement("input", {type: "submit", name: "login", className: "login modal-submit btn btn-primary", value: "Login", onClick: this.props.onSave})
+            React.createElement("div", {className: "container"}, 
+                React.createElement("div", {className: "col-sm-4"}, 
+                    React.createElement("form", null, 
+                        React.createElement("div", {className: "form-group"}, 
+                            React.createElement("label", null, "Email address"), 
+                            React.createElement("input", {type: "text", 
+                                name: "username", 
+                                className: "form-control", 
+                                placeholder: "Username", 
+                                ref: "username", 
+                                onChange: this.props.onChange, 
+                                value: this.props.user.username})
+                        ), 
+                        React.createElement("div", {className: "form-group"}, 
+                            React.createElement("label", null, "Password"), 
+                            React.createElement("input", {type: "password", 
+                                name: "pass", 
+                                className: "form-control", 
+                                placeholder: "Password", 
+                                ref: "pass", 
+                                onChange: this.props.onChange, 
+                                value: this.props.user.pass})
+                        ), 
+                        React.createElement("input", {type: "submit", name: "login", className: "login modal-submit btn btn-primary", value: "Login", onClick: this.props.onSave})
+                    )
                 )
             )
         );
