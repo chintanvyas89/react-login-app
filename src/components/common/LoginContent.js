@@ -23,7 +23,6 @@ var LoginContent = React.createClass({
                 fullName: response.data.field_full_name[0].value
               }
            });
-           console.log(response.data);
        })
        .catch(function (error) {
            console.log(error);

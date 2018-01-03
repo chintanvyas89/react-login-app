@@ -21,7 +21,6 @@ var Login = React.createClass({
       var field = event.target.name;
       var value = event.target.value;
       this.state.user[field] = value;
-      //console.log(this.state.user);
       return this.setState({user: this.state.user});
     },
 
@@ -44,19 +43,12 @@ var Login = React.createClass({
           sessionStorage.setItem('auth', credentials);
 
           toastr.success('You are now Logged in. Please check your info', 'Login Success');
-          console.log(response.data);
           this.redirectToHome();
         })
         .catch(function (error) {
           console.log(error)
           toastr.error('Login failed', 'Please enter correct info.');
         });
-
-        
-
-        //console.log(this.state.user);
-        
-        
     },
 
    render: function() {

@@ -17,14 +17,6 @@ var Logout = React.createClass({
           var key = sessionStorage.key(i);
           sessionStorage.removeItem(key);
       }
-      
-    },
-
-    componentDidMount: () => {
-      console.log('redirect');
-
-      // this.context.router.transitionTo('app');
-      // this.history.pushState(null, '/');
     },
 
     redirectToHome: function() {

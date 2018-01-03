@@ -33843,7 +33843,6 @@ var LoginContent = React.createClass({displayName: "LoginContent",
                 fullName: response.data.field_full_name[0].value
               }
            });
-           console.log(response.data);
        })
        .catch(function (error) {
            console.log(error);
@@ -33976,7 +33975,6 @@ var Login = React.createClass({displayName: "Login",
       var field = event.target.name;
       var value = event.target.value;
       this.state.user[field] = value;
-      //console.log(this.state.user);
       return this.setState({user: this.state.user});
     },
 
@@ -33999,19 +33997,12 @@ var Login = React.createClass({displayName: "Login",
           sessionStorage.setItem('auth', credentials);
 
           toastr.success('You are now Logged in. Please check your info', 'Login Success');
-          console.log(response.data);
           this.redirectToHome();
         })
         .catch(function (error) {
           console.log(error)
           toastr.error('Login failed', 'Please enter correct info.');
         });
-
-        
-
-        //console.log(this.state.user);
-        
-        
     },
 
    render: function() {
@@ -34085,14 +34076,6 @@ var Logout = React.createClass({displayName: "Logout",
           var key = sessionStorage.key(i);
           sessionStorage.removeItem(key);
       }
-      
-    },
-
-    componentDidMount: () => {
-      console.log('redirect');
-
-      // this.context.router.transitionTo('app');
-      // this.history.pushState(null, '/');
     },
 
     redirectToHome: function() {
