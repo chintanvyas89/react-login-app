@@ -12,7 +12,7 @@
   - reloads the browser upon save  
 
 ## To get started:
-
+Make sure your Drupal website is running with rest modules enabled and configured.
 1. Install [NodeJS](http://www.nodejs.org)  
 2. Pull the repository - git@github.com:chintanvyas89/react-login-app.git
 3. Open the command line of your choice and cd to the root directory of this repo on your machine  
