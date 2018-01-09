@@ -1,5 +1,5 @@
 {
-  "name": "psadmin",
+  "name": "login",
   "version": "1.0.0",
   "dependencies": {
     "axios": {
