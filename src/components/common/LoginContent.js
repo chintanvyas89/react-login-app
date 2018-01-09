@@ -45,9 +45,7 @@ var LoginContent = React.createClass({
                         <strong>{this.state.user.fullName}</strong><br /> <Link to="logout">Logout</Link>
                    </div>
                  </div>
-            </div>
-            
-             
+            </div>    
          </div>
      );
 }
